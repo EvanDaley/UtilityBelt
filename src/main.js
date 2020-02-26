@@ -1,10 +1,11 @@
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import Vue from 'vue';
-import JsonViewer from 'vue-json-viewer';
 import App from './App.vue';
 import router from './router';
 
 Vue.config.productionTip = false;
-Vue.use(JsonViewer);
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 
 new Vue({
   router,
