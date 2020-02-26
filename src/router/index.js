@@ -20,6 +20,13 @@ const routes = [
       return import(/* webpackChunkName: "about" */ '../views/About.vue');
     },
   },
+  {
+    path: '/json-viewer',
+    name: 'json-viewer',
+    component() {
+      return import('../components/JsonTool.vue');
+    },
+  },
 ];
 
 const router = new VueRouter({
